@@ -129,7 +129,7 @@ Mocht je het niet gelijk kunnen terugvinden, kies dan \emph{Opdracht uitvoeren\l
 
 \section{Een programma de\"{i}nstalleren met Synaptic}
 
-Stel, DreamChess was toch niet wat je ervan verwachtte. Dan de\"{i}nstallerr je het toch weer?
+Stel, DreamChess was toch niet wat je ervan verwachtte. Dan de\"{i}nstalleer je het toch weer?
 
 Dus open je Synaptic en zoek je op de zoekterm \emph{DreamChess}, zoals beschreven in het eerste deel van deze handleiding. 
 
@@ -137,9 +137,14 @@ In de pakkettenlijst staan nu nog maar twee pakketten: \emph{dreamchess} en \emp
 
 Klik met de rechter muisknop op DreamChess. Kies ''Markeren voor verwijdering''. Dat kun je in dit geval ook doen voor dreamchess-data. 
 
-\textbf{WAARSCHUWING:} Vaak zijn meerdere programma\'s afhankelijk van dezelfde pakketten. Dat kan ook het besturingssysteem zijn. Als je dan het verkeerde pakket verwijdert, kan het zijn dat de computer niet meer goed opstart. Of \'{e}\'{e}n van de andere programm\'s start niet meer goed op. In geval van twijfel (dat is bijna altijd) laat je die pakketten dus staan. 
 
-\begin{figure} [H]
+\textbf{WAARSCHUWING:} Probeer niet Synaptic te gebruiken om je computer op te schonen! Je komt daarmee makkelijk in de problemen, en moeilijk er nog uit. 
+
+Vaak zijn meerdere programma\'{}s afhankelijk van dezelfde pakketten. Dat kan ook het besturingssysteem zijn. Als je dan het verkeerde pakket verwijdert, kan het zijn dat de computer niet meer goed opstart. Of \'{e}\'{e}n van de andere programma\'{}s start niet meer goed op. In geval van twijfel (en dat is eigenlijk altijd) laat je die pakketten dus staan. 
+
+Meer over opschonen in het derde hoofdstukje.
+
+\begin figure} [H]
 \centering
 \includegraphics[width=0.45\textwidth]{plaatje16}
 \includegraphics[width=0.45\textwidth]{plaatje17}
@@ -168,5 +173,21 @@ Als je aangemerkt hebt wat je wilt verwijderen, kies je Toepassen. Synaptic vraa
 
 Synaptic doet de rest. Je krijgt tot slot nog een venstertje ter bevestiging dat de de\"{i}nstallatie gelukt is.
 
+\clearpage
+
+\section{Voor gevorderden: de computer opschonen vanaf de terminal}
+
+Je opent LXTerminal en voert in:
+
+\texttt{sudo apt-get autoremove}
+
+en doet enter. Je wordt nu gevraagd om je wachtwoord. Dat voer je in. Hierbij gebeurt er niets op het scherm. Je doet opnieuw enter. 
+
+In het terminalvenster kun je nu volgen hoe de computer wordt opgeschoond. Als het proces is voltooid, kun je het venster sluiten. 
+\textbf{Wat is er nu gebeurd?}
+
+Met het commando \texttt{sudo} heb je gevraagd om beheersbevoegdheid om veranderingen aan te brengen in de computer. \texttt{sudo} vraagt altijd om je wachtwoord. Je gebruikt \texttt{sudo} all\'{e}\'{e}n als je weet wat je doet. Serieus. 
+
+\texttt{apt-get} is het \textit{backend-} programma voor het installeren van programma\'{}s en het  aanbrengen van veranderingen aan ge\"{i}nstalleerde programma\'{}'s. Aptitude is een voorkant voor \texttt{apt-get}. \texttt{autoremove} was wat je \texttt{apt-get} vroeg om te doen. Daarmee zijn alle pakketten verwijderd waar geen andere programma\'{}s meer afhankelijk zijn.
 
 \end{document}
