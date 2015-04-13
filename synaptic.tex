@@ -9,6 +9,7 @@
 \usepackage{listings}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{color}
 
 
 
@@ -20,11 +21,11 @@
 \title{Een programma installeren met Synaptic}
 \date{\today}
 \maketitle
-\abstract{Een beknopte inleiding tot het gebruik van Synaptic op Debian}
-\section{Een programma installeren met Synaptic}
+\abstract{\noindent Een beknopte inleiding tot het gebruik van Synaptic op Debian}
+\section{Een programma installeren met Synaptic.}
 
 
-Je opent Synaptic. Dit programma vind je waarschijnlijk onder Overige. Zo niet, dan kun je altijd \emph{Opdracht uitvoeren\ldots} kiezen uit het startmenu en dan ''Synaptic'' invoeren. 
+Je opent Synaptic. Dit programma vind je waarschijnlijk onder Overige. Zo niet, dan kun je altijd \emph{Opdracht uitvoeren\ldots} kiezen uit het startmenu en dan ``Synaptic'' invoeren. 
 
 \begin{figure} [H]
 \centering
@@ -33,7 +34,7 @@ Je opent Synaptic. Dit programma vind je waarschijnlijk onder Overige. Zo niet, 
 \label{plaatje01}
 \end{figure}
 
-Synaptic vraagt gelijk bij openen naar je wachtwoord. Het heeft dit nodig om software te kunnen installeren of te verwijderen.
+\noindent Synaptic vraagt gelijk bij openen naar je wachtwoord. Het heeft dit nodig om software te kunnen installeren of te verwijderen.
 
 \begin{figure} [H]
 \centering
@@ -44,7 +45,7 @@ Synaptic vraagt gelijk bij openen naar je wachtwoord. Het heeft dit nodig om sof
 
 \clearpage
 
-Nu je er toch bent, is het een goed idee om te herladen. Daarna weet je zeker dat je van alle programma's de nieuwste beschikbare versie kunt krijgen.
+\noindent Nu je er toch bent, is het een goed idee om te herladen. Daarna weet je zeker dat je van alle programma's de nieuwste beschikbare versie kunt krijgen.
 
 \begin{figure} [H]
 \centering
@@ -54,7 +55,7 @@ Nu je er toch bent, is het een goed idee om te herladen. Daarna weet je zeker da
 \label{plaatje04}
 \end{figure}
 
-Als je weet welk programma je wilt installeren, hoef je niet moeilijk te doen en het in een menu op te zoeken. Je doet Zoeken en voert de naam in.
+\noindent Als je weet welk programma je wilt installeren, hoef je niet moeilijk te doen en het in een menu op te zoeken. Je doet Zoeken en voert de naam in.
 
 \begin{figure} [H]
 \centering
@@ -63,7 +64,7 @@ Als je weet welk programma je wilt installeren, hoef je niet moeilijk te doen en
 \label{plaatje06}
 \end{figure}
 
-In dit voorbeeld installeren we het schaakspelletje DreamChess. Dat vink je aan.	
+\noindent In dit voorbeeld installeren we het schaakspelletje DreamChess. Dat vink je aan.	
 
 \begin{figure} [H]
 \centering
@@ -74,7 +75,7 @@ In dit voorbeeld installeren we het schaakspelletje DreamChess. Dat vink je aan.
 
 \clearpage
 
-DreamChess vraagt je om nog een paar andere stukjes software aan te vinken. Het functioneert niet naar behoren zonder. Dus klik je Markeren.
+\noindent DreamChess vraagt je om nog een paar andere stukjes software aan te vinken. Het functioneert niet naar behoren zonder. Dus klik je Markeren.
 
 \begin{figure} [H]
 \centering
@@ -83,7 +84,7 @@ DreamChess vraagt je om nog een paar andere stukjes software aan te vinken. Het 
 \label{plaatje08}
 \end{figure}
 
-Nu klik je Toepassen. Er wordt nog eens gevraagd of je zeker weet dat je dit wilt doen. Dus klik je opnieuw op Toepassen. 
+\noindent Nu klik je Toepassen. Er wordt nog eens gevraagd of je zeker weet dat je dit wilt doen. Dus klik je opnieuw op Toepassen. 
 
 \begin{figure} [H]
 \centering
@@ -92,7 +93,7 @@ Nu klik je Toepassen. Er wordt nog eens gevraagd of je zeker weet dat je dit wil
 \label{plaatje10}
 \end{figure}
 
-Synaptic gaat nu softwarepakketten ophalen. Daarna gaat het deze installeren.
+\noindent Synaptic gaat nu softwarepakketten ophalen. Daarna gaat het deze installeren.
 
 \begin{figure} [H]
 \centering
@@ -104,7 +105,7 @@ Synaptic gaat nu softwarepakketten ophalen. Daarna gaat het deze installeren.
 
 \clearpage
 
-Als het geslaagd is, kun je daarna Synaptic afsluiten.
+\noindent Als het geslaagd is, kun je daarna Synaptic afsluiten.
 
 \begin{figure} [H]
 \centering
@@ -113,9 +114,9 @@ Als het geslaagd is, kun je daarna Synaptic afsluiten.
 \label{plaatje13}
 \end{figure}
 
-In Debian blijkt Dream Chess ondergebracht te zijn onder Spelletjes. We zijn klaar voor een potje schaak!
+\noindent In Debian blijkt Dream Chess ondergebracht te zijn onder Spelletjes. We zijn klaar voor een potje schaak!
 
-Mocht je het niet gelijk kunnen terugvinden, kies dan \emph{Opdracht uitvoeren\ldots} uit het startmenu en voer ''DreamChess'' in.
+Mocht je het niet gelijk kunnen terugvinden, kies dan \emph{Opdracht uitvoeren\ldots} uit het startmenu en voer ``DreamChess'' in.
 
 \begin{figure} [H]
 \centering
@@ -133,14 +134,15 @@ Stel, DreamChess was toch niet wat je ervan verwachtte. Dan de\"{i}nstalleer je 
 
 Dus open je Synaptic en zoek je op de zoekterm \emph{DreamChess}, zoals beschreven in het eerste deel van deze handleiding. 
 
-In de pakkettenlijst staan nu nog maar twee pakketten: \emph{dreamchess} en \emph{dreamchess-data}. DreamChess kun je sowieso verwijderen. dreamchess-data kan in dit geval ook, want we weten dat DreamChess \emph{het enige} programma is dat ervan afhankelijk is. 
+In de pakkettenlijst staan nu nog maar twee pakketten: \emph{dreamchess} en \emph{dreamchess-data}. DreamChess kun je sowieso verwijderen. Dreamchess-data kan in dit geval ook, want we weten dat DreamChess \emph{het enige} programma is dat ervan afhankelijk is. 
 
 Klik met de rechter muisknop op DreamChess. Kies ''Markeren voor verwijdering''. Dat kun je in dit geval ook doen voor dreamchess-data. 
 
+\vspace{1em}
 
-\textbf{WAARSCHUWING:} Probeer niet Synaptic te gebruiken om je computer op te schonen! Je komt daarmee makkelijk in de problemen, en moeilijk er nog uit. 
+\noindent \textbf{\color{red}WAARSCHUWING:} Probeer niet Synaptic te gebruiken om je computer op te schonen! Je komt daarmee makkelijk in de problemen, en moeilijk er nog uit. 
 
-Vaak zijn meerdere programma\'{}s afhankelijk van dezelfde pakketten. Dat kan ook het besturingssysteem zijn. Als je dan het verkeerde pakket verwijdert, kan het zijn dat de computer niet meer goed opstart. Of \'{e}\'{e}n van de andere programma\'{}s start niet meer goed op. In geval van twijfel (en dat is eigenlijk altijd) laat je die pakketten dus staan. 
+Vaak zijn meerdere programma's afhankelijk van dezelfde pakketten. Dat kan ook het bestu{}ringssysteem zijn. Als je dan het verkeerde pakket verwijdert, kan het zijn dat de computer niet meer opstart. Of \'{e}\'{e}n van de andere programma\'{}s start niet meer goed op. In geval van twijfel (en dat is eigenlijk altijd) laat je die pakketten dus staan. 
 
 Meer over opschonen in het derde hoofdstukje.
 
@@ -152,7 +154,7 @@ Meer over opschonen in het derde hoofdstukje.
 \label{plaatje16}
 \end{figure}
 
-Afhankelijkheden kun je bekijken onder \emph[Eigenschappen]. Onder de tab \emph{Eigenschappen} krijg je een overzicht.  
+\noindent Een overzicht van de afhankelijkheden kun je bekijken onder de tab \emph{Eigenschappen}.  
 
 \begin{figure} [H]
 \centering
@@ -161,7 +163,7 @@ Afhankelijkheden kun je bekijken onder \emph[Eigenschappen]. Onder de tab \emph{
 \label{plaatje18}
 \end{figure}
 
-Als je aangemerkt hebt wat je wilt verwijderen, kies je Toepassen. Synaptic vraagt nog eens om bevestiging.  
+\noindent Als je aangemerkt hebt wat je wilt verwijderen, kies je Toepassen. Synaptic vraagt nog eens om bevestiging.  
 
 \begin{figure} [H]
 \centering
@@ -171,23 +173,27 @@ Als je aangemerkt hebt wat je wilt verwijderen, kies je Toepassen. Synaptic vraa
 \label{plaatje19}
 \end{figure}
 
-Synaptic doet de rest. Je krijgt tot slot nog een venstertje ter bevestiging dat de de\"{i}nstallatie gelukt is.
+\noindent Synaptic doet de rest. Je krijgt tot slot nog een venstertje ter bevestiging dat de de\"{i}nstallatie gelukt is.
 
 \clearpage
 
 \section{Voor gevorderden: de computer opschonen vanaf de terminal}
 
-Je opent LXTerminal en voert in:
+De terminal geeft je grote macht over je computer, en daarmee grote verantwoordelijkheid. Dus doe wat je durft, en doe niet wat je niet durft. OK?
 
-\texttt{sudo apt-get autoremove}
+Je opent LXTerminal. In het venster staat een tekstregel die lijkt op \texttt{gebruiker@computer~\$} . Op dezelfde regel voer je in:
 
-en doet enter. Je wordt nu gevraagd om je wachtwoord. Dat voer je in. Hierbij gebeurt er niets op het scherm. Je doet opnieuw enter. 
+\begin{lstlisting}[language=bash]
+sudo apt-get autoremove
+\end{lstlisting}
+
+\noindent en doet enter. Je wordt nu gevraagd om je wachtwoord. Dat voer je in. Hierbij gebeurt er niets op het scherm. Je doet opnieuw enter. 
 
 In het terminalvenster kun je nu volgen hoe de computer wordt opgeschoond. Als het proces is voltooid, kun je het venster sluiten. 
-\textbf{Wat is er nu gebeurd?}
+\vspace{1em}
 
-Met het commando \texttt{sudo} heb je gevraagd om beheersbevoegdheid om veranderingen aan te brengen in de computer. \texttt{sudo} vraagt altijd om je wachtwoord. Je gebruikt \texttt{sudo} all\'{e}\'{e}n als je weet wat je doet. Serieus. 
+\noindent \textbf{Wat is er nu gebeurd?} Met het commando \texttt{sudo} heb je gevraagd om beheersbevoegdheid om veranderingen aan te brengen in de computer. \texttt{sudo} vraagt altijd om je wachtwoord. Je gebruikt \texttt{sudo} all\'{e}\'{e}n als je weet wat je doet. Serieus. 
 
-\texttt{apt-get} is het \textit{backend-} programma voor het installeren van programma\'{}s en het  aanbrengen van veranderingen aan ge\"{i}nstalleerde programma\'{}'s. Aptitude is een voorkant voor \texttt{apt-get}. \texttt{autoremove} was wat je \texttt{apt-get} vroeg om te doen. Daarmee zijn alle pakketten verwijderd waar geen andere programma\'{}s meer afhankelijk zijn.
+\texttt{apt-get} is het ``onzichtbare'' \textit{backend-}programma voor het installeren van programma's en het  aanbrengen van veranderingen aan ge\"{i}nstalleerde programma's. Aptitude is een voorkant voor \texttt{apt-get} en nog een paar van zulke scripts. \texttt{autoremove} was wat je \texttt{apt-get} vroeg om te doen. Daarmee zijn alle pakketten verwijderd waar geen andere programma's meer van afhankelijk zijn.
 
 \end{document}
