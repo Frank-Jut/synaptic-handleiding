@@ -4,7 +4,8 @@ viewpdf:
 	pdflatex synaptic.tex; xpdf synaptic.pdf
 
 viewhtml:
-	htlatex synaptic.tex synaptic -utf8 ; x-www-browser synaptic.html
+	#htlatex synaptic.tex "synaptic,charset=utf-8" "-cunihtf -utf8" ; x-www-browser synaptic.html
+	htlatex synaptic.tex synaptic ; x-www-browser synaptic.html
 
 prepare:
 	sudo apt-get install texlive xpdf 
